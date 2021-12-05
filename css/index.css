@@ -1,0 +1,9 @@
+/*********************
+    Homepage stylesheet
+**********************/
+
+/* Planting Image */
+.img-plant {
+    background-image: url(../images/planting.jpg);
+    background-size: cover;
+}

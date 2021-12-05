@@ -1,0 +1,187 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="Description" content="Buy a plot today!">
+    <title>Buy a plot!</title>
+    <!--Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+    <!--Local CSS-->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/tips.css">
+</head>
+
+<body class="dm-serif lh-lg">
+    <div class="container-fluid">
+        <a href="#main-content" class="skipLink"></a>
+        <header class="bg-custom-green dm-serif">
+            <div class="m-0 pb-0 d-flex" role="none">
+                <img src="images/logo.png" alt="Willow Gardens Logo.">
+                <div class="align-self-center">
+                    <h1>Willow Gardens</h1>
+                    <h3 class="m-0">Growing together.</h3>
+                </div>
+            </div>
+        </header>
+        <nav class="bg-custom-dark p-2">
+            <ul class="nav justify-content-evenly h3 list-unstyled" role="menubar">
+                <li role="none" class="nav-item"><a class="link-light text-custom-link" role="menuitem"
+                        href=index.html>Home</a></li>
+                <li role="none" class="current-page nav-item"><a class="link-light text-custom-link" role="menuitem"
+                        aria-label="Current page: Buy plot" href=buyPlot.html>Apply for a plot</a></li>
+                <li role="none" class="nav-item"><a class="link-light text-custom-link" role="menuitem"
+                        href="#">Contact</a></li>
+                <li role="none" class="nav-item"><a class="link-light text-custom-link" role="menuitem"
+                        href="gardeningTips.html">Gardening tips</a></li>
+                <li role="none" class="nav-item"><a class="link-light text-custom-link" role="menuitem"
+                        href="#">Volunteer</a></li>
+                <li role="none" class="nav-item"><a class="link-light text-custom-link" role="menuitem" href="#">For the
+                        kids</a></li>
+            </ul>
+        </nav>
+
+        <div>
+            <div class="card-group">
+                <div class="card m-5" style="width: 18rem;">
+                    <img src="/images/gardenPlot.jpg" class="card-img-top" alt="One of the many garden plots.">
+                    <div class="card-body">
+                        <h3 class="card-title">
+                            Plot details:
+                        </h3>
+                        <ul>
+                            <li>20' x 20' (400 sq. ft.)</li>
+                            <li>Max plots per gardener: 4</li>
+                            <li>Work at any time under the Garden rules</li>
+                            <li>Organic gardening methods only</li>
+                            <li>No sections tilled. Allowing perennials and fencing.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card m-5" style="width: 18rem;">
+                    <img src="/images/gardenPlot2.jpg" class="card-img-top" alt="One of the many garden plots.">
+                    <div class="card-body">
+                        <h3 class="card-title">
+                            Pricing:
+                        </h3>
+                        <p class="text-custom-purple">Price dependent on income level, size, and household/garden
+                            family.</p>
+                        <ul>
+                            <li>$15 per plot/year</li>
+                            <li>$43 per plot/year</li>
+                            <li>$78 per plot/year</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card m-5" style="width: 18rem;">
+                    <img src="/images/airPlots.jpg" class="card-img-top mb-2" alt="One of the many garden plots.">
+                    <div class="card-body">
+                        <h3 class="card-title">
+                            Features:
+                        </h3>
+                        <ul>
+                            <li>Water is provided throughout the season</li>
+                            <li>Garden tools are available to everyone</li>
+                            <li>Free wood chips available</li>
+                            <li>We offer hay and row cover for sale on our application</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="bg-custom-green rounded-2 p-3 mb-3 mw-25">
+                <h1 class="ms-2">Ready to grow?</h1>
+
+                <form class="ms-2 mw-25 bg-white p-3 rounded-2" action="http://itins3.madisoncollege.edu/echo.php" method="post">
+                    <h4 class="text-custom-purple">Are you a returning gardener?</h4>
+
+                    <div class="d-flex">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="returning" id="yesReturn" value="Y">
+                            <label for="yesReturn" class="form-label">Yes</label>
+                        </div>
+                        <div class="form-check ms-3">
+                            <input class="form-check-input" type="radio" name="returning" id="noReturning" value="N">
+                            <label for="noReturning" class="form-label">No</label>
+                        </div>    
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="firstName" class="form-label">First Name:</label>
+                        <input class="form-control" type="text" name="firstName" required id="firstName">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="lastName" class="form-label">Last Name:</label>
+                        <input class="form-control" type="text" name="lastName" required id="lastName">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email:</label>
+                        <input class="form-control" type="email" name="email" required id="email">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">Phone:</label>
+                        <input class="form-control" type="text" name="phone" id="phone">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="plotNumber" class="form-label">Number of plots:</label>
+                        <select class="form-select" name="numberOfPlots" id="plotNumber">
+                            <option value="01">1</option>
+                            <option value="02">2</option>
+                            <option value="03">3</option>
+                            <option value="04">4</option>
+                        </select>
+                    </div>
+
+                    <h4>Join a Garden Team!</h4>
+                    <p class="small text-custom-purple">Teams are a great way to get to know other gardeners and
+                        volunteer on your own schedule. Check the box for each team you are interested in, we will email
+                        you more info</p>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="mentor" id="mentor" value="mentor">
+                        <label class="form-label" for="mentor">New Garden Mentor</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="plot" id="plot" value="maintenance">
+                        <label class="form-label" for="plot">Plot Maintenance </label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="water" id="water" value="water">
+                        <label class="form-label" for="water">Water Maintenance </label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="equipment" id="equipment" value="equi">
+                        <label class="form-label" for="equipment">Equipment Maintenance </label>
+                    </div>
+
+                    <div class="my-2">
+                        <input class="btn btn-success me-5" type="submit" value="Submit">
+                        <input class="btn btn-secondary" type="reset" value="Clear form">
+                    </div>
+
+                </form>
+            </div>
+            <footer class="bg-custom-green p-2 d-flex justify-content-center">
+                <h3>Growing together. |</h3>
+                <a class="link-dark text-custom-link h3 ps-2" href="#"> Contact us.</a>
+            </footer>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

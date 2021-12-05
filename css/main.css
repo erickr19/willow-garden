@@ -1,0 +1,41 @@
+/* Current Page Indicator */
+li.current-page a {
+  color: #B9759B;
+}
+
+/* Skip Link */
+.skipLink {
+  position: absolute;
+  left: -1000px;
+}
+
+.skipLink:focus,
+.skipLink:active {
+  left: 0;
+}
+
+/*  Custom Colors */
+/* Green */
+
+.bg-custom-green {
+  background-color: #75B993;
+}
+
+.bg-custom-dark {
+  background-color: #1E1E1E;
+}
+
+.text-custom-purple {
+  color: #B9759B;
+}
+
+.text-custom-link:hover {
+  color: #B9759B;
+  transition: 0.3s ease-in;
+}
+/* Custom Typography */
+.dm-serif {
+  font-family: "DM Serif Display", serif;
+}
+
+
