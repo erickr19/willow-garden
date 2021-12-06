@@ -38,4 +38,7 @@ li.current-page a {
   font-family: "DM Serif Display", serif;
 }
 
+input::placeholder {
+  color: #767676;
+}
 

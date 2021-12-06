@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 
 <html lang="en">
 
@@ -20,13 +20,13 @@
 
 <body class="dm-serif lh-lg">
     <div class="container-fluid">
-        <a href="#main-content" class="skipLink"></a>
         <header class="bg-custom-green dm-serif">
+            <a href="#main-content" class="skipLink" aria-label="Skip to main content"></a>
             <div class="m-0 pb-0 d-flex" role="none">
                 <img src="images/logo.png" alt="Willow Gardens Logo.">
                 <div class="align-self-center">
                     <h1>Willow Gardens</h1>
-                    <h3 class="m-0">Growing together.</h3>
+                    <h2 class="m-0">Growing together.</h2>
                 </div>
             </div>
         </header>
@@ -48,139 +48,178 @@
         </nav>
 
         <div>
-            <div class="card-group">
-                <div class="card m-5" style="width: 18rem;">
-                    <img src="/images/gardenPlot.jpg" class="card-img-top" alt="One of the many garden plots.">
-                    <div class="card-body">
-                        <h3 class="card-title">
-                            Plot details:
-                        </h3>
-                        <ul>
-                            <li>20' x 20' (400 sq. ft.)</li>
-                            <li>Max plots per gardener: 4</li>
-                            <li>Work at any time under the Garden rules</li>
-                            <li>Organic gardening methods only</li>
-                            <li>No sections tilled. Allowing perennials and fencing.</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="card m-5" style="width: 18rem;">
-                    <img src="/images/gardenPlot2.jpg" class="card-img-top" alt="One of the many garden plots.">
-                    <div class="card-body">
-                        <h3 class="card-title">
-                            Pricing:
-                        </h3>
-                        <p class="text-custom-purple">Price dependent on income level, size, and household/garden
-                            family.</p>
-                        <ul>
-                            <li>$15 per plot/year</li>
-                            <li>$43 per plot/year</li>
-                            <li>$78 per plot/year</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="card m-5" style="width: 18rem;">
-                    <img src="/images/airPlots.jpg" class="card-img-top mb-2" alt="One of the many garden plots.">
-                    <div class="card-body">
-                        <h3 class="card-title">
-                            Features:
-                        </h3>
-                        <ul>
-                            <li>Water is provided throughout the season</li>
-                            <li>Garden tools are available to everyone</li>
-                            <li>Free wood chips available</li>
-                            <li>We offer hay and row cover for sale on our application</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <hr>
-            <div class="bg-custom-green rounded-2 p-3 mb-3 mw-25">
-                <h1 class="ms-2">Ready to grow?</h1>
+            <main id="main-content">
+                <div class="row">
+                    <div class="col">
+                        <div class="d-flex flex-column align-items-center mx-auto w-75">
 
-                <form class="ms-2 mw-25 bg-white p-3 rounded-2" action="http://itins3.madisoncollege.edu/echo.php" method="post">
-                    <h4 class="text-custom-purple">Are you a returning gardener?</h4>
+                            <form class="ms-2 my-5 bg-white p-3 rounded-2 mb-5 was-validated"
+                                action="http://itins3.madisoncollege.edu/echo.php" method="post">
+                                <h1>Ready to grow?</h1>
 
-                    <div class="d-flex">
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="returning" id="yesReturn" value="Y">
-                            <label for="yesReturn" class="form-label">Yes</label>
+                                <fieldset>
+                                    <legend>Apply for a plot</legend>
+                                    <p class="mb-0 small" aria-label="">Are you a returning gardener?</p>
+                                    <div class="d-flex">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="returning" id="yesReturn"
+                                                value="Y">
+                                            <label for="yesReturn" class="form-label">Yes</label>
+                                        </div>
+                                        <div class="form-check ms-3">
+                                            <input class="form-check-input" type="radio" name="returning"
+                                                id="noReturning" value="N">
+                                            <label for="noReturning" class="form-label">No</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="firstName" class="form-label">First Name:</label>
+                                        <input class="form-control" type="text" name="firstName" required id="firstName"
+                                            placeholder="Joe" aria-placeholder="Joe">
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="lastName" class="form-label">Last Name:</label>
+                                        <input class="form-control" type="text" name="lastName" required id="lastName"
+                                            placeholder="Macintosh" aria-placeholder="Macintosh">
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="email" class="form-label">Email:</label>
+                                        <input class="form-control" type="email" name="email" required id="email"
+                                            placeholder="joemacintosh@appleseed.com"
+                                            aria-placeholder="joemacintosh@appleseed.com">
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="phone" class="form-label">Phone:</label>
+                                        <input class="form-control" type="text" name="phone" id="phone"
+                                            placeholder="123-456-7890" aria-placeholder="123-456-7890">
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="plotNumber" class="form-label">Number of plots:</label>
+                                        <select required aria-required="true" class="form-select" name="numberOfPlots"
+                                            id="plotNumber">
+                                            <option value="">Select number of plots desired</option>
+                                            <option value="01">1</option>
+                                            <option value="02">2</option>
+                                            <option value="03">3</option>
+                                            <option value="04">4</option>
+                                        </select>
+                                    </div>
+
+                                </fieldset>
+
+                                <h2>Join a Garden Team!</h2>
+                                <p>Optional</p>
+                                <p class="small">Teams are a great way to get to know other gardeners and
+                                    volunteer on your own schedule. Check the box for each team you are interested in,
+                                    we will
+                                    email
+                                    you more info</p>
+                                <fieldset>
+                                    <legend>Check desired role(s)</legend>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="mentor" id="mentor"
+                                            value="mentor">
+                                        <label class="form-label" for="mentor">New Garden Mentor</label>
+                                    </div>
+
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="plot" id="plot"
+                                            value="maintenance">
+                                        <label class="form-label" for="plot">Plot Maintenance </label>
+                                    </div>
+
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="water" id="water"
+                                            value="water">
+                                        <label class="form-label" for="water">Water Maintenance </label>
+                                    </div>
+
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="equipment" id="equipment"
+                                            value="equi">
+                                        <label class="form-label" for="equipment">Equipment Maintenance </label>
+                                    </div>
+
+                                    <div class="my-2">
+                                        <input class="btn btn-success me-5" type="submit" value="Submit">
+                                        <input class="btn btn-secondary" type="reset" value="Clear form">
+                                    </div>
+                                </fieldset>
+
+                            </form>
                         </div>
-                        <div class="form-check ms-3">
-                            <input class="form-check-input" type="radio" name="returning" id="noReturning" value="N">
-                            <label for="noReturning" class="form-label">No</label>
-                        </div>    
                     </div>
-
-                    <div class="mb-3">
-                        <label for="firstName" class="form-label">First Name:</label>
-                        <input class="form-control" type="text" name="firstName" required id="firstName">
+                    <div class="col-8 d-flex flex-nowrap align-items-center">
+                        <div class="card-group flex-wrap">
+                            <div class="card mx-3" style="width: 25rem;">
+                                <img src="/images/gardenPlot.jpg" class="card-img-top"
+                                    alt="One of the many garden plots.">
+                                <div class="card-body">
+                                    <h3 class="card-title">
+                                        Plot details:
+                                    </h3>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">20' x 20' (400 sq. ft.)</li>
+                                        <li class="list-group-item">Max plots per gardener: 4</li>
+                                        <li class="list-group-item">Work at any time under the Garden rules</li>
+                                        <li class="list-group-item">Organic gardening methods only</li>
+                                        <li class="list-group-item">No sections tilled. Allowing perennials and fencing.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card mx-3" style="width: 25rem;">
+                                <img src="/images/gardenPlot2.jpg" class="card-img-top"
+                                    alt="One of the many garden plots.">
+                                <div class="card-body">
+                                    <h3 class="card-title">
+                                        Pricing:
+                                    </h3>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">$15 per plot/year*</li>
+                                        <li class="list-group-item">$43 per plot/year*</li>
+                                        <li class="list-group-item">$78 per plot/year*</li>
+                                    </ul>
+                                    <br><br><br><br>
+                                    <p class="small card-text">*Price dependent on income level, size, and
+                                        household/garden
+                                        family.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card mx-3" style="width: 25rem;">
+                                <img src="/images/gardenPlot3.jpg" class="card-img-top"
+                                    alt="One of the many garden plots.">
+                                <div class="card-body">
+                                    <h3 class="card-title">
+                                        Features:
+                                    </h3>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">Water is provided throughout the season</li>
+                                        <li class="list-group-item">Garden tools are available to everyone</li>
+                                        <li class="list-group-item">Free wood chips available</li>
+                                        <li class="list-group-item">We offer hay and row cover for sale on site</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                </div>
+            </main>
 
-                    <div class="mb-3">
-                        <label for="lastName" class="form-label">Last Name:</label>
-                        <input class="form-control" type="text" name="lastName" required id="lastName">
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="email" class="form-label">Email:</label>
-                        <input class="form-control" type="email" name="email" required id="email">
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="phone" class="form-label">Phone:</label>
-                        <input class="form-control" type="text" name="phone" id="phone">
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="plotNumber" class="form-label">Number of plots:</label>
-                        <select class="form-select" name="numberOfPlots" id="plotNumber">
-                            <option value="01">1</option>
-                            <option value="02">2</option>
-                            <option value="03">3</option>
-                            <option value="04">4</option>
-                        </select>
-                    </div>
-
-                    <h4>Join a Garden Team!</h4>
-                    <p class="small text-custom-purple">Teams are a great way to get to know other gardeners and
-                        volunteer on your own schedule. Check the box for each team you are interested in, we will email
-                        you more info</p>
-
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" name="mentor" id="mentor" value="mentor">
-                        <label class="form-label" for="mentor">New Garden Mentor</label>
-                    </div>
-
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" name="plot" id="plot" value="maintenance">
-                        <label class="form-label" for="plot">Plot Maintenance </label>
-                    </div>
-
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" name="water" id="water" value="water">
-                        <label class="form-label" for="water">Water Maintenance </label>
-                    </div>
-
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" name="equipment" id="equipment" value="equi">
-                        <label class="form-label" for="equipment">Equipment Maintenance </label>
-                    </div>
-
-                    <div class="my-2">
-                        <input class="btn btn-success me-5" type="submit" value="Submit">
-                        <input class="btn btn-secondary" type="reset" value="Clear form">
-                    </div>
-
-                </form>
-            </div>
-            <footer class="bg-custom-green p-2 d-flex justify-content-center">
-                <h3>Growing together. |</h3>
-                <a class="link-dark text-custom-link h3 ps-2" href="#"> Contact us.</a>
-            </footer>
         </div>
+        <footer class="bg-custom-green d-flex p-2 justify-content-center">
+            <p class="h3">Growing together. |</p>
+            <a class="link-dark text-custom-link h3 ps-2" href="#"> Contact us.</a>
+        </footer>
 
     </div>
+
 
 </body>
 
