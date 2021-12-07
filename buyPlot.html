@@ -59,16 +59,16 @@
 
                                 <fieldset>
                                     <legend>Apply for a plot</legend>
-                                    <p class="mb-0 small">Are you a returning gardener?</p>
+                                    <p class="mb-0 small" id="returningGardener">Are you a returning gardener?</p>
                                     <div class="d-flex">
                                         <div class="form-check">
                                             <input class="form-check-input" type="radio" name="returning" id="yesReturn"
-                                                value="Y">
+                                                value="Y" aria-labelledby="returningGardener yesReturn">
                                             <label for="yesReturn" class="form-label">Yes</label>
                                         </div>
                                         <div class="form-check ms-3">
                                             <input class="form-check-input" type="radio" name="returning"
-                                                id="noReturning" value="N">
+                                                id="noReturning" value="N" aria-labelledby="returningGardener noReturning">
                                             <label for="noReturning" class="form-label">No</label>
                                         </div>
                                     </div>
